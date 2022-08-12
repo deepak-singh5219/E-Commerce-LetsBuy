@@ -3,6 +3,10 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 import product from './product';
 import banner from './banner';
+import clothing from './clothing';
+import laptops from './laptops';
+import smartphones from './smartphones';
+import smartTV from './smartTV';
 
 export default createSchema({
   
@@ -10,6 +14,10 @@ export default createSchema({
  
   types: schemaTypes.concat([
     product,
-    banner
+    banner,
+    clothing,
+    laptops,
+    smartphones,
+    smartTV
   ]),
 })

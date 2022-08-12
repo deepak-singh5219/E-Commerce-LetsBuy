@@ -1,6 +1,6 @@
 export default {
-    name:'product',
-    title:'Product',
+    name:'smartphone',
+    title:'Smart Phone',
     type:'document',
     fields:[
         {

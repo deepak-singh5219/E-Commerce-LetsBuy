@@ -1,6 +1,6 @@
 export default {
-    name:'product',
-    title:'Product',
+    name:'smartTV',
+    title:'Smart TV',
     type:'document',
     fields:[
         {
