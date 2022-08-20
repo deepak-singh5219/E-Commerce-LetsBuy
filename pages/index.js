@@ -71,7 +71,7 @@ const Home = ({
         </div>
       </div>
 
-      <FooterBanner />
+      <FooterBanner footerBanner = {bannerData && bannerData[1]}/>
     </>
   );
 };
