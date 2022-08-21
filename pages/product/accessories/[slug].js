@@ -1,13 +1,15 @@
 import React, {useState} from 'react'
-import { client, urlFor } from '../../lib/client';
+import { client, urlFor } from '../../../lib/client';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar} from 'react-icons/ai';
-import { Product } from '../../components';
+import { Product } from '../../../components';
 
-function ProductDetails({product, products}) {
+function ProductDetails({product, products,smartphone}) {
 
     const [index, setIndex] = useState(0);
 
+   
     const { image,name, details, price,actualPrice,discount} = product
+    // const { image,name, details, price,actualPrice,discount} = smartphone 
   return (
     <div>
         <div className="product-detail-container">
@@ -79,7 +81,7 @@ function ProductDetails({product, products}) {
                     <div className="maylike-products-container track">
                         {
                             products.map((item) => (
-                                <Product className="product-swipe" key={item._id} product={item}/>
+                                <Product key={item._id} product={item}/>
                             ))
                         }
                     </div>
@@ -89,9 +91,12 @@ function ProductDetails({product, products}) {
   )
 }
 
+
 export const getStaticProps  = async ({params:{slug}}) => {
     const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
     const product = await client.fetch(query);
+    const smartphonequery = `*[_type == "smartphone" && slug.current == '${slug}'][0]`;
+    const smartphone = await client.fetch(smartphonequery);
     const productsQuery = '*[_type == "product"]';
     const products = await client.fetch(productsQuery);
   
@@ -99,7 +104,7 @@ export const getStaticProps  = async ({params:{slug}}) => {
     
   
     return {
-      props: { products, product},
+      props: { products, product, smartphone},
     };
   };
 

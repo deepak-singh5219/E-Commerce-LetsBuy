@@ -48,6 +48,12 @@ export default {
             title:'Details',
             type:'string',
 
-        }
+        },
+        {
+            name:'producttype',
+            title:'Product Type',
+            type:'string',
+
+        },
     ]
 }
