@@ -29,7 +29,7 @@ This is an modern E-Commerce application with clean and beatiful UI where users 
 
 <img align="left" alt="Tailwind CSS" width="26px" src="./readmeAssets/sanity.webp" /> `Sanity`
 
-<img align="left" alt="Tailwind CSS" width="26px" src="./readmeAssets/stripe-emblem.png" /> `Stripe` (pending)
+<img align="left" alt="Tailwind CSS" width="26px" src="./readmeAssets/stripe.png" /> `Stripe` (pending)
 
 # Features
  - Build over React and Next js which stability and robust application design.
