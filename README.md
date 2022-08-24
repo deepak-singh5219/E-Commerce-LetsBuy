@@ -48,8 +48,11 @@ This is an modern E-Commerce application with clean and beatiful UI where users 
 
  # Product Details Page
  ![](./readmeAssets/2.png)
+ ***
  ![](./readmeAssets/3.png)
+ ***
  ![](./readmeAssets/4.png)
+ ***
  ![](./readmeAssets/5.png)
 
  # Demo
