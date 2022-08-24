@@ -1,34 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# iNeuron Website
 
-## Getting Started
+![ineuro, lco](https://img.shields.io/badge/iNeuron-LCO-blue)
+![](https://img.shields.io/badge/React%20Js-Tailwind%20CSS-brightgreen)
+![HTML & CSS](https://img.shields.io/badge/HTML-CSS-green)
+![](https://img.shields.io/badge/FindCoder-Full%20Stack%20Js%20Hackathon-yellow)
 
-First, run the development server:
+This is the homepage of iNeuron website build for the Full Stack JS Hackathon conducted on [FindCoder](https://findcoder.io) by [iNeuron](https://ineuron.ai/) under `Hitesh Choudhary`.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+I would like to thank the `iNeuron Team` and `Hitesh Choudhary` for bringing up a hackathon to us so that we learn more. Before building this project I was not confident enough but now building this project from scratch has made me confident on my skills and learned a lot of new stuff here.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# General Information
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- This project contains the mobile responsive home page of iNeuron Business Website.
+- iNeuron started as a product development company, then launched its ed-tech division. We provide 360 degree solutions from learning to internship to finding a job, and the first ever educational OTT platform to upgrade your skill set.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Technologies Used
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<img align="left" alt="HTML5" width="26px" src="./readmeAssets/html-5.png" /> `HTML`
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+<img align="left" alt="CSS3" width="26px" src="./readmeAssets/css-3.png" /> `CSS`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+<img align="left" alt="JavaScript" width="26px" src="./readmeAssets/javascp1.png" /> `JavaScript`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img align="left" alt="React Js" width="26px" src="./readmeAssets/logo512.png" /> `React Js`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img align="left" alt="Tailwind CSS" width="26px" src="./readmeAssets/Tailwind.png" /> `Tailwind CSS`
+
+# Features
+ - Build over React which offers stability on single page web apps.
+ - Contains animations which makes it more interactive to users.
+ - Transitions which gives a smooth scroll feel
+ - Carousel cards
+ - Clean and Beautiful UI Design
+ - Made in Dark Mode
+ - Fully Responsive Mobile Design
+
+ # Website
+ ![](./readmeAssets/screebshot.png)
+
+ # Mobile Responsive Design
+
+ 
+
+
+ # Contact
+
+ <img align="left" alt="HTML5" width="26px" src="./readmeAssets/linkedin.png" /> [Linkedin](https://www.linkedin.com/in/deepaksingh5219/)
+
+
+<img align="left" alt="CSS3" width="26px" src="./readmeAssets/github.png" /> [GitHub](https://github.com/deepak-singh5219/)
+
+
+
+<img align="left" alt="JavaScript" width="26px" src="./readmeAssets/instagram.png" /> [Instagram](https://www.instagram.com/deepak_singh_5219/)
+
+<img align="left" alt="React Js" width="26px" src="./readmeAssets/findcoder.png" /> [Findcoder](https://www.findcoder.io/u/deepaksingh5219)
+
+
