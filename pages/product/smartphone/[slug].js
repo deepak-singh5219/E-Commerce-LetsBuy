@@ -24,7 +24,7 @@ function ProductDetails({smartphone,smartphones}) {
 
                 <div className="small-images-container">
                     {image?.map((item,i) => (
-                        <img src={urlFor(item)} className={`${i === index ?('small-image selected-image'):('small-image')}`} onMouseEnter= {() => setIndex(i)} />
+                        <img src={urlFor(item)} key={item._id} className={`${i === index ?('small-image selected-image'):('small-image')}`} onMouseEnter= {() => setIndex(i)} />
                     ))}
                 </div>
             </div>
