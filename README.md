@@ -1,18 +1,16 @@
-# iNeuron Website
+# E-Commerce WebShop
 
 ![ineuro, lco](https://img.shields.io/badge/iNeuron-LCO-blue)
-![](https://img.shields.io/badge/React%20Js-Tailwind%20CSS-brightgreen)
 ![HTML & CSS](https://img.shields.io/badge/HTML-CSS-green)
-![](https://img.shields.io/badge/FindCoder-Full%20Stack%20Js%20Hackathon-yellow)
+![](https://img.shields.io/badge/React%20Js-Next%20Js-brightgreen)
+![](https://img.shields.io/badge/-Sanity-yellow)
 
-This is the homepage of iNeuron website build for the Full Stack JS Hackathon conducted on [FindCoder](https://findcoder.io) by [iNeuron](https://ineuron.ai/) under `Hitesh Choudhary`.
+This is an modern E-Commerce application with clean and beatiful UI where users can checkout among different products, explore the product details, add the products to thier cart and check out. The application is fully responsive wuth dynamic data being pulled directly from Sanity which can be modified according to the retailers requirements.
 
-I would like to thank the `iNeuron Team` and `Hitesh Choudhary` for bringing up a hackathon to us so that we learn more. Before building this project I was not confident enough but now building this project from scratch has made me confident on my skills and learned a lot of new stuff here.
 
 # General Information
 
-- This project contains the mobile responsive home page of iNeuron Business Website.
-- iNeuron started as a product development company, then launched its ed-tech division. We provide 360 degree solutions from learning to internship to finding a job, and the first ever educational OTT platform to upgrade your skill set.
+- This project contains the mobile responsive e-commerce application build with `React`, `Next Js` and `Sanity` to offer a modern dynamic application that will be loved by both customers and retailers. 
 
 # Technologies Used
 
@@ -27,21 +25,34 @@ I would like to thank the `iNeuron Team` and `Hitesh Choudhary` for bringing up 
 
 <img align="left" alt="React Js" width="26px" src="./readmeAssets/logo512.png" /> `React Js`
 
-<img align="left" alt="Tailwind CSS" width="26px" src="./readmeAssets/Tailwind.png" /> `Tailwind CSS`
+<img align="left" alt="Tailwind CSS" width="26px" src="./readmeAssets/next-js.png" /> `Next Js`
+
+<img align="left" alt="Tailwind CSS" width="26px" src="./readmeAssets/sanity.webp" /> `Sanity`
+
+<img align="left" alt="Tailwind CSS" width="26px" src="./readmeAssets/stripe-emblem.png" /> `Stripe` (pending)
 
 # Features
- - Build over React which offers stability on single page web apps.
+ - Build over React and Next js which stability and robust application design.
  - Contains animations which makes it more interactive to users.
  - Transitions which gives a smooth scroll feel
- - Carousel cards
+ - Homepage containing dynamic banners which can be modified as per requirements.
+ - Dynamic product cards which can be modified as per reuirements.
+ - Dynamic Prodict details page containing all information about the product
+ - Add to cart feature 
  - Clean and Beautiful UI Design
- - Made in Dark Mode
  - Fully Responsive Mobile Design
+ - Dynamic and Modern Design
 
  # Website
- ![](./readmeAssets/screebshot.png)
+ ![](./readmeAssets/fullpage.png)
 
- # Mobile Responsive Design
+ # Product Details Page
+ ![](./readmeAssets/2.png)
+ ![](./readmeAssets/3.png)
+ ![](./readmeAssets/4.png)
+ ![](./readmeAssets/5.png)
+
+ # Demo
 
  
 
