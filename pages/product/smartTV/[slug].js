@@ -4,13 +4,15 @@ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar} from 'react-i
 import { Product } from '../../../components';
 import { useStateContext } from '../../../context/StateContext';
 
-function ProductDetails({laptop,laptops}) {
+function ProductDetails({smartTV,smartTVs}) {
 
     const [index, setIndex] = useState(0);
 
+    const { decQty, incQty, qty, onAdd} = useStateContext();
+
    
-    const { decQty, incQty, qty,onAdd} = useStateContext();
-    const { image,name, details, price,actualPrice,discount} = laptop 
+    
+    const { image,name, details, price,actualPrice,discount} = smartTV 
   return (
     <div>
         <div className="product-detail-container">
@@ -63,11 +65,10 @@ function ProductDetails({laptop,laptops}) {
                         </span>
                     </p>
 
-
                 </div>
 
                 <div className="buttons">
-                    <button onClick={() => onAdd(laptop,qty) } className="add-to-cart">Add to cart</button>
+                    <button onClick={() => onAdd(smartTV,qty) } className="add-to-cart">Add to cart</button>
                     <button className="buy-now">Buy Now</button>
                 </div>
             </div>
@@ -81,7 +82,7 @@ function ProductDetails({laptop,laptops}) {
                     
                     <div className="maylike-products-container track">
                         {
-                            laptops.map((item) => (
+                            smartTVs.map((item) => (
                                 <Product key={item._id} product={item}/>
                             ))
                         }
@@ -95,22 +96,22 @@ function ProductDetails({laptop,laptops}) {
 
 export const getStaticProps  = async ({params:{slug}}) => {
     
-    const laptopquery = `*[_type == "laptop" && slug.current == '${slug}'][0]`;
-    const laptop = await client.fetch(laptopquery);
-    const laptopsQuery = '*[_type == "laptop"]';
-    const laptops = await client.fetch(laptopsQuery);
+    const smartTVquery = `*[_type == "smartTV" && slug.current == '${slug}'][0]`;
+    const smartTV = await client.fetch(smartTVquery);
+    const smartTVsQuery = '*[_type == "smartTV"]';
+    const smartTVs = await client.fetch(smartTVsQuery);
   
   
     
   
     return {
-      props: { laptop, laptops},
+      props: { smartTV, smartTVs},
     };
   };
 
   export const getStaticPaths = async () => {
 
-    const query = `*[_type == "laptop"] {
+    const query = `*[_type == "smartTV"] {
         slug{
             current
         }
@@ -118,8 +119,8 @@ export const getStaticProps  = async ({params:{slug}}) => {
     }
     `;
 
-    const laptops = await client.fetch(query);
-    const paths = laptops.map((product) => ({
+    const smartTVs = await client.fetch(query);
+    const paths = smartTVs.map((product) => ({
         params: {
             slug:product.slug.current
         }

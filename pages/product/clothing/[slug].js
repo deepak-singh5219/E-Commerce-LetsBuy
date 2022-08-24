@@ -4,13 +4,15 @@ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar} from 'react-i
 import { Product } from '../../../components';
 import { useStateContext } from '../../../context/StateContext';
 
-function ProductDetails({laptop,laptops}) {
+function ProductDetails({cloth, cloths}) {
 
     const [index, setIndex] = useState(0);
 
    
-    const { decQty, incQty, qty,onAdd} = useStateContext();
-    const { image,name, details, price,actualPrice,discount} = laptop 
+    const { image,name, details, price,actualPrice,discount} = cloth
+    // const { image,name, details, price,actualPrice,discount} = smartphone 
+
+    const { decQty, incQty, qty ,onAdd} = useStateContext();
   return (
     <div>
         <div className="product-detail-container">
@@ -67,7 +69,7 @@ function ProductDetails({laptop,laptops}) {
                 </div>
 
                 <div className="buttons">
-                    <button onClick={() => onAdd(laptop,qty) } className="add-to-cart">Add to cart</button>
+                    <button onClick={() => onAdd(cloth,qty) } className="add-to-cart">Add to cart</button>
                     <button className="buy-now">Buy Now</button>
                 </div>
             </div>
@@ -78,10 +80,10 @@ function ProductDetails({laptop,laptops}) {
             <div className="maylike-products-wrapper">
                 <h2>You may also like</h2>
                 <div className="marquee">
-                    
+                   
                     <div className="maylike-products-container track">
                         {
-                            laptops.map((item) => (
+                            cloths.map((item) => (
                                 <Product key={item._id} product={item}/>
                             ))
                         }
@@ -94,23 +96,23 @@ function ProductDetails({laptop,laptops}) {
 
 
 export const getStaticProps  = async ({params:{slug}}) => {
+    const query = `*[_type == "clothing" && slug.current == '${slug}'][0]`;
+    const cloth = await client.fetch(query);
     
-    const laptopquery = `*[_type == "laptop" && slug.current == '${slug}'][0]`;
-    const laptop = await client.fetch(laptopquery);
-    const laptopsQuery = '*[_type == "laptop"]';
-    const laptops = await client.fetch(laptopsQuery);
+    const clothsQuery = '*[_type == "clothing"]';
+    const cloths = await client.fetch(clothsQuery);
   
   
     
   
     return {
-      props: { laptop, laptops},
+      props: { cloths, cloth},
     };
   };
 
   export const getStaticPaths = async () => {
 
-    const query = `*[_type == "laptop"] {
+    const query = `*[_type == "product"] {
         slug{
             current
         }
@@ -118,8 +120,8 @@ export const getStaticProps  = async ({params:{slug}}) => {
     }
     `;
 
-    const laptops = await client.fetch(query);
-    const paths = laptops.map((product) => ({
+    const cloths = await client.fetch(query);
+    const paths = cloths.map((product) => ({
         params: {
             slug:product.slug.current
         }

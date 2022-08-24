@@ -6,7 +6,7 @@ const Home = ({
   bannerData,
   smartphones,
   laptops,
-  clothes,
+  cloths,
   smartTVs,
 }) => {
   return (
@@ -54,7 +54,7 @@ const Home = ({
       </div>
       <div className="products">
         <div className="products-container">
-          {clothes?.map((cloth) => (
+          {cloths?.map((cloth) => (
             <Product product={cloth} key={cloth._id} />
           ))}
         </div>

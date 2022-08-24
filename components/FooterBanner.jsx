@@ -17,7 +17,7 @@ const FooterBanner = ({footerBanner}) => {
           <h3>{footerBanner.midText}</h3>
           <p>{footerBanner.desc}</p>
 
-          <Link href={`/product/${footerBanner.slug.current}`}>
+          <Link href={`/product/accessories/${footerBanner.slug.current}`}>
             <button type="button">{footerBanner.buttonText}</button>
           </Link>
         </div>

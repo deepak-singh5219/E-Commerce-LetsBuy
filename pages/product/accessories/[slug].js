@@ -98,8 +98,7 @@ function ProductDetails({product, products,smartphone}) {
 export const getStaticProps  = async ({params:{slug}}) => {
     const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
     const product = await client.fetch(query);
-    const smartphonequery = `*[_type == "smartphone" && slug.current == '${slug}'][0]`;
-    const smartphone = await client.fetch(smartphonequery);
+    
     const productsQuery = '*[_type == "product"]';
     const products = await client.fetch(productsQuery);
   
@@ -107,7 +106,7 @@ export const getStaticProps  = async ({params:{slug}}) => {
     
   
     return {
-      props: { products, product, smartphone},
+      props: { products, product},
     };
   };
 
