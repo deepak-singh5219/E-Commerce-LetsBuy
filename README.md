@@ -55,6 +55,10 @@ This is an modern E-Commerce application with clean and beatiful UI where users 
  ***
  ![](./readmeAssets/5.png)
 
+ # Cart
+
+ ![](./readmeAssets/1.png)
+
  # Demo
 
  
