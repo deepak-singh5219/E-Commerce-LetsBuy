@@ -1,5 +1,8 @@
 # E-Commerce WebShop
 
+![webShop](https://user-images.githubusercontent.com/84671689/189168088-d82c1eab-ac5c-41f2-bae7-4b6391b09470.png)
+
+
 ![ineuro, lco](https://img.shields.io/badge/iNeuron-LCO-blue)
 ![HTML & CSS](https://img.shields.io/badge/HTML-CSS-green)
 ![](https://img.shields.io/badge/React%20Js-Next%20Js-brightgreen)
@@ -42,6 +45,7 @@ This is an modern E-Commerce application with clean and beatiful UI where users 
  - Clean and Beautiful UI Design
  - Fully Responsive Mobile Design
  - Dynamic and Modern Design
+
 
  # Website
  ![](./readmeAssets/fullpage.png)
