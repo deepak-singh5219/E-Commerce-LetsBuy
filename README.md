@@ -13,7 +13,7 @@ This is an modern E-Commerce application with clean and beatiful UI where users 
 
 # General Information
 
-- This project contains the mobile responsive e-commerce application build with `React`, `Next Js` and `Sanity` to offer a modern dynamic application that will be loved by both customers and retailers. 
+- This project contains the mobile responsive e-commerce application build with `React`, `Next Js` and `Sanity` to offer a modern dynamic application that will be loved by both customers and retailers. Modern design and user-friendly UI.
 
 # Technologies Used
 
