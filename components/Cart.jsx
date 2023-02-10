@@ -6,6 +6,10 @@ import toast from 'react-hot-toast';
 import { useStateContext } from '../context/StateContext';
 import { urlFor } from '../lib/client';
 import { useRef } from 'react';
+import getStripe from '../lib/getStripe';
+import axios from 'axios';
+
+
 
 
   
@@ -13,6 +17,26 @@ const Cart = () => {
 
   const cartRef = useRef();
   const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
+
+  const handleSubmit = async () => {
+    const stripe = await getStripe();
+    try{
+          const res = await axios.post('/api/stripe',JSON.stringify(cartItems),{
+            headers:{
+              'Content-Type':'application/json'
+            }
+          })
+      console.log("Axios Response", res);
+      const data = await res.data;
+      toast.loading('Processing!!!');
+      stripe.redirectToCheckout({ sessionId: data.id}); 
+
+    }catch(error){
+           console.log("Axios Error",error);
+           return;
+    }
+
+  }
   
   return (
     <div className="cart-wrapper" ref={cartRef}>
@@ -86,7 +110,7 @@ const Cart = () => {
           </div>
         
         <div className="btn-container">
-          <button onClick="" type="button" className="btn">
+          <button onClick={handleSubmit} type="button" className="btn">
             Proceed to Pay
           </button>
         </div>
