@@ -1,5 +1,8 @@
 # E-Commerce WebShop
 
+![webShop](https://user-images.githubusercontent.com/84671689/189168088-d82c1eab-ac5c-41f2-bae7-4b6391b09470.png)
+
+
 ![ineuro, lco](https://img.shields.io/badge/iNeuron-LCO-blue)
 ![HTML & CSS](https://img.shields.io/badge/HTML-CSS-green)
 ![](https://img.shields.io/badge/React%20Js-Next%20Js-brightgreen)
@@ -10,7 +13,7 @@ This is an modern E-Commerce application with clean and beatiful UI where users 
 
 # General Information
 
-- This project contains the mobile responsive e-commerce application build with `React`, `Next Js` and `Sanity` to offer a modern dynamic application that will be loved by both customers and retailers. 
+- This project contains the mobile responsive e-commerce application build with `React`, `Next Js` and `Sanity` to offer a modern dynamic application that will be loved by both customers and retailers. Modern design and user-friendly UI.
 
 # Technologies Used
 
@@ -43,7 +46,11 @@ This is an modern E-Commerce application with clean and beatiful UI where users 
  - Fully Responsive Mobile Design
  - Dynamic and Modern Design
 
+<<<<<<< HEAD
  ![](./readmeAssets/webShop.png)
+=======
+
+>>>>>>> 1534e3421a4883f93a4c17b1c93a6c5b681b3e0f
  # Website
  ![](./readmeAssets/fullpage.png)
 
@@ -56,9 +63,17 @@ This is an modern E-Commerce application with clean and beatiful UI where users 
  ***
  ![](./readmeAssets/5.png)
 
+<<<<<<< HEAD
  # Cart
 
  ![](./readmeAssets/1.png)
+=======
+ ## Cart
+
+  ![](./readmeAssets/1.png)
+
+
+>>>>>>> 1534e3421a4883f93a4c17b1c93a6c5b681b3e0f
 
  # Demo
 
